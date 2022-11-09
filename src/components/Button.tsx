@@ -19,8 +19,6 @@ export function BigButton({ varient,children, asChild }: ButtonProps) {
         'py-2.5 px-24 bg-transparent border-primary-blue border text-primary-blue': varient === 'DefaultTrasparent',
         'py-1.5 px-24 bg-transparent border-primary-blue border text-primary-blue': varient === 'SmallTrasparent',
 
-        //bg-transparent	background-color: transparent;
-
       }
     )}
     >

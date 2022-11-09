@@ -9,11 +9,10 @@ export interface IconProps {
 
 
 export function Icon({src}: IconProps) {
-
   return (
     <img 
       src={src}
-    />
-    
+      className='w-7 h-6'
+    /> 
   )
 }

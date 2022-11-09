@@ -49,6 +49,7 @@ export const Home: StoryObj<IconProps> = {}
 export const HomeVariant: StoryObj<IconProps> = {
   args:{
     src:homeVariant
+    
   }
 }
 

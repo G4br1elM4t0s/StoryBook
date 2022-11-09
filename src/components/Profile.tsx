@@ -11,11 +11,10 @@ export interface ProfileProps {
 
 
 
-export function Profile({ varient,name,index, asChild }: ProfileProps) {
+export function Profile( { varient,name,index, asChild}: ProfileProps) {
   const ComponentText = asChild?Slot:'p'
   const ComponentText2 = asChild?Slot:'p'
   return (
-
     <div className='flex gap-3'>
       <div className={clsx("bg-dark-7 rounded-full bg-Avatar bg-contain w-9 h-9", {})}>
       </div>
@@ -28,6 +27,8 @@ export function Profile({ varient,name,index, asChild }: ProfileProps) {
         'text-dark-6 text-sm': varient === 'Light',
         'text-dark-5 text-sm': varient === 'Dark'
       })}>{index}</ComponentText2>  
+
+    \
     </div>
     </div>
   )
