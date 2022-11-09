@@ -4,15 +4,19 @@ import { ReactNode } from 'react'
 
 export interface IconProps {
   src?:string;
+  className?:string;
 }
 
 
 
-export function Icon({src}: IconProps) {
+export function Icon({src,className}: IconProps) {
   return (
     <img 
       src={src}
-      className='w-7 h-6'
+      className={className}
     /> 
   )
+}
+Icon.defaultProps= {
+  className:'w-7 h-6'
 }
